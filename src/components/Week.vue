@@ -2,7 +2,9 @@
     <div class="container">
         <div class="labels">
             <div class="title"> {{title}}</div>
-            <div class="pages"> length:     {{pages}} </div>
+            <div class="pages"> length: <span class="space">{{pages}}</span> </div>
+            <div> Week of: <span class="space">{{date}}</span> </div>
+        
         </div>
         <div class="week">
             <div class="day" v-for="(day, index) in days" :key="index">
@@ -24,7 +26,8 @@ export default {
     props:[
         "days",
         "title",
-        "pages"
+        "pages",
+        "date"
     ]
 
     
@@ -54,6 +57,10 @@ export default {
     }
     .pages{
         margin-left: 1em;
+        margin-right: 1em;
+    }
+    .space{
+        margin-left: 0.1em;
     }
 
 </style>

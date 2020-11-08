@@ -3,7 +3,7 @@
     <img src="../assets/open-book.svg">
     <h1>What Am I Reading?</h1>
     <div v-for="(week, index) in weeks" :key="index">  
-      <Week :days="week.values" :title="week.title" :pages="week.pages"/> 
+      <Week :days="week.values" :title="week.title" :pages="week.pages" :date="week.date"/> 
     </div>
     <div>Icons made by 
       <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
@@ -31,17 +31,20 @@ export default {
       {
         values: [0, 10, 20, 50, 80, 90, 100],
         title: "Brave New World",
-        pages: 200
+        pages: 200,
+        date: "1/3"
       },
       {
         values: [0, 0, 0, 0, 0, 0, 0],
         title: "1984",
-        pages: 300
+        pages: 300,
+        date: "1/10"
       },
       {
         values: [100, 100, 100, 100, 100, 100, 100],
         title: "Fahrenheit 451",
-        pages: 250
+        pages: 250,
+        date: "1/17"
       }
       
     ],

@@ -1,8 +1,16 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <img src="../assets/open-book.svg">
+    <h1>What Am I Reading?</h1>
     <div v-for="(week, index) in weeks" :key="index">  
       <Week :days="week.values" :title="week.title" :pages="week.pages"/> 
+    </div>
+    <div>Icons made by 
+      <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+        Freepik
+      </a> 
+      from 
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
     </div>
   </div>
 </template>
@@ -21,10 +29,20 @@ export default {
   data: ()=>({
     weeks:[
       {
-        values: [0, 90, 80, 70, 100, 100, 100],
-        title: "book1",
+        values: [0, 10, 20, 50, 80, 90, 100],
+        title: "Brave New World",
         pages: 200
       },
+      {
+        values: [0, 0, 0, 0, 0, 0, 0],
+        title: "1984",
+        pages: 300
+      },
+      {
+        values: [100, 100, 100, 100, 100, 100, 100],
+        title: "Fahrenheit 451",
+        pages: 250
+      }
       
     ],
   })
@@ -47,4 +65,9 @@ li {
 a {
   color: #42b983;
 }
+img{
+  width:10em;
+}
+
+
 </style>

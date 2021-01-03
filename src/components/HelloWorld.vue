@@ -5,7 +5,7 @@
     <div v-for="(week, index) in weeks" :key="index">  
       <Week :days="week.values" :title="week.title" :pages="week.pages" :date="week.date"/> 
     </div>
-    <div>Icons made by 
+    <div class="credit">Icons made by 
       <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
         Freepik
       </a> 
@@ -29,22 +29,10 @@ export default {
   data: ()=>({
     weeks:[
       {
-        values: [0, 10, 20, 50, 80, 90, 100],
-        title: "Brave New World",
-        pages: 200,
-        date: "1/3"
-      },
-      {
         values: [0, 0, 0, 0, 0, 0, 0],
-        title: "1984",
-        pages: 300,
-        date: "1/10"
-      },
-      {
-        values: [100, 100, 100, 100, 100, 100, 100],
-        title: "Fahrenheit 451",
-        pages: 250,
-        date: "1/17"
+        title: "Slaughterhouse 5",
+        pages: 200,
+        date: "1/3/2021"
       }
       
     ],

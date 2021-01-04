@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/reading/'
+    publicPath: 'http://reading.alondono.me'
   }

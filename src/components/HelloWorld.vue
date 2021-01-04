@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <img src="../assets/open-book.svg">
-    <h1>What Am I Reading?</h1>
+    <h1>What Is Alejandro Reading?</h1>
     <div v-for="(week, index) in weeks" :key="index">  
       <Week :days="week.values" :title="week.title" :pages="week.pages" :date="week.date"/> 
     </div>

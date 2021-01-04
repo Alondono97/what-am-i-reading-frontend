@@ -31,7 +31,7 @@ export default {
       {
         values: [0, 0, 0, 0, 0, 0, 0],
         title: "Slaughterhouse 5",
-        pages: 200,
+        pages: 275,
         date: "1/3/2021"
       }
       

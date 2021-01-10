@@ -29,10 +29,16 @@ export default {
   data: ()=>({
     weeks:[
       {
-        values: [0, 0, 0, 0, 0, 0, 0],
-        title: "Slaughterhouse 5",
+        values: [100, 100, 100, 100, 100, 100, 100],
+        title: "Slaughterhouse Five",
         pages: 275,
         date: "1/3/2021"
+      },
+      {
+        values: [100, 0, 0, 0, 0, 0, 0],
+        title: "Vagabonding",
+        pages: 205,
+        date: "1/10/2021"
       }
       
     ],

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="labels">
             <div class="title"> {{title}}</div>
-            <div class="pages"> length: <span class="space">{{pages}}</span> </div>
+            <div class="pages"> Pages: <span class="space">{{pages}}</span> </div>
             <div> Week of: <span class="space">{{date}}</span> </div>
         
         </div>

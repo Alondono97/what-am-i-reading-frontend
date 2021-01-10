@@ -3,7 +3,6 @@
         :style="`opacity: ${(score + 20) / 120}`"
         @mouseover="hover = true"
         @mouseleave="hover = false"
-    
     >
         <span v-if="hover">{{score}}%</span>
     </div>

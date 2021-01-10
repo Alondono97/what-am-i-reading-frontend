@@ -1,29 +1,43 @@
 <template>
   <div class="hello">
-    <img src="../assets/open-book.svg">
-    <h1>What Am I Reading?</h1>
-    <div v-for="(week, index) in weeks" :key="index">  
-      <Week :days="week.values" :title="week.title" :pages="week.pages" :date="week.date"/> 
-    </div>
-    <div>Icons made by 
-      <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
-        Freepik
-      </a> 
-      from 
-      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    <hamburger/>
+    <div class="main">
+      
+      <sidebar class="sideBar"/>
+      
+      <div class="library">
+        <img src="../assets/open-book.svg">
+        <h1>What Am I Reading?</h1>
+        <div v-for="(week, index) in weeks" :key="index">  
+          <Week :days="week.values" :title="week.title" :pages="week.pages" :date="week.date"/> 
+        </div>
+        <div>Icons made by 
+          <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+            Freepik
+          </a> 
+          from 
+          <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div> 
+      </div>
+
     </div>
   </div>
 </template>
 
 <script>
 import Week from './Week.vue'
+import Hamburger from './sidebar/Hamburger.vue'
+import Sidebar from './sidebar/Sidebar.vue'
 
 export default {
   name: 'HelloWorld',
   components:{
-    Week
+    Week,
+    Hamburger,
+    Sidebar
   },
   props: {
+
     msg: String
   },
   data: ()=>({
@@ -71,6 +85,17 @@ a {
 img{
   width:10em;
 }
+.main{
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+/* .sideBar{
+  flex-grow: 2;
+}
+.library{
+  flex-grow: 2;
+} */
 
 
 </style>

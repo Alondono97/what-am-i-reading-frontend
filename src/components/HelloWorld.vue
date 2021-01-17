@@ -71,6 +71,13 @@ a {
 img{
   width:10em;
 }
+.credit{
+  color: gray;
 
+}
+
+.credit a{
+  color: rgb(134, 133, 133);
+}
 
 </style>

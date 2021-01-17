@@ -26,7 +26,7 @@ export default{
 
 <style scoped>
     .backdrop{
-        /* background-color: chartreuse; */
+        background-color: chartreuse;
         height: 100vh;
         width: 100vw;
         position: fixed;

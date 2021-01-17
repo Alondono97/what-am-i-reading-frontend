@@ -30,6 +30,12 @@ export default {
     weeks:[
       {
         values: [100, 0, 0, 0, 0, 0, 0],
+        title: "What Do You Care What Other People Think?",
+        pages: 277,
+        date: "1/17/2021"
+      },
+      {
+        values: [100, 100, 100, 100, 100, 100, 100],
         title: "Vagabonding",
         pages: 205,
         date: "1/10/2021"

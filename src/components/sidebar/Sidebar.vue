@@ -3,7 +3,14 @@
         <div class="backdrop" @click="closeSideBar" v-if="isOpen"></div>
         <transition name="slide">
             <div v-if="isOpen" class="sidebar"> 
-                lorem ipum dolor set incum laude telem dulce insem talarm incur test
+                <h1>Book List</h1>
+                <ol>
+                    <li v-for="book in booklist" :key="book">
+                        <div class="title"> {{book.title}} </div>
+                        <div> {{book.author}} </div>
+                    </li>
+                    
+                </ol>
             </div>
         </transition>
         
@@ -12,21 +19,35 @@
 </template>
 
 <script>
-export default{
-    data: ()=> ({
-        isOpen: true
-    }),
+import {store, mutations} from '../../store.js'
+
+export default {
+    name: 'Sidebar',
+    props:{
+        booklist: Array
+    },
+        
+
+    computed: {
+        isOpen(){
+            return store.isSidebarOpen
+        }
+    },
     methods: {
         closeSideBar(){
-            this.isOpen = false
+            mutations.toggleNav()
         }
     }
 }
 </script>
 
 <style scoped>
+   
+    h1{
+
+    }
+
     .backdrop{
-        background-color: chartreuse;
         height: 100vh;
         width: 100vw;
         position: fixed;
@@ -34,11 +55,27 @@ export default{
         
     }
     .sidebar{
-        background-color: blueviolet;
-        height: 80vh;
+        background-color: #7a9ddd;
+        height: 70vh;
         width: 20rem;
         position: fixed;
         z-index: 999;
-        /* max-width: 25rem; */
+        padding: 2em;
+    }
+    ol{
+        overflow-y: auto;
+        max-height: 60vh;
+        text-overflow: ellipsis;
+    }
+    ol li{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .title{
+        /* margin-left: 1em; */
+        overflow-x: auto;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        scrollbar-width: none;
     }
 </style>

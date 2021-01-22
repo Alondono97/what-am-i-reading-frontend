@@ -3,7 +3,7 @@
     <hamburger/>
     <div class="main">
       
-      <sidebar class="sideBar"/>
+      <sidebar class="sideBar" :booklist="booklist"/>
       
       <div class="library">
         <img src="../assets/open-book.svg">
@@ -62,6 +62,56 @@ export default {
       }
       
     ],
+    booklist:[
+      {
+        title: "Slaughterhouse Five",
+        author: "Kurt Vonnegut"
+      },
+      {
+        title: "Vagabonding",
+        author: "Rolph Potts"
+      },
+      {
+        title: "What Do You Care What Other People Think?",
+        author: "Richard Feynman"
+      },
+      {
+        title: "Stubborn Attachments",
+        author: "Tyler Cowens"
+      },
+      {
+        title: "My Stroke of Insight",
+        author: "Dr. Jill Bolte Taylor"
+      },
+      {
+        title: "Man's Search for Meaning",
+        author: "Victor E. Frankl"
+      },
+      {
+        title: "The Screwtape Letters",
+        author: "C. S. Lewis"
+      },
+      {
+        title: "Do Androids Dream of Electric Sheep",
+        author: "Phillip K. Dick"
+      },
+      {
+        title: "Zero to One",
+        author: "Peter Thiel"
+      },
+      {
+        title: "The Selfish Gene",
+        author: "Richard Dawkins"
+      },
+      {
+        title: "The Hitchhiker's Guide to the Galaxy",
+        author: "Douglas Adams"
+      },
+      {
+        title: "The Year of Magical Thinking",
+        author: "Joan Didion"
+      }
+    ]
   })
 }
 </script>

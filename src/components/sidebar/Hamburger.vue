@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container anim" :class="{'anim-vert': isBurgerActive}" @click="toggle">
         <span class="bun"></span>
         <span class="bun"></span>
         <span class="bun"></span>        
@@ -18,6 +18,7 @@ export default {
     methods:{
         toggle(){
             mutations.toggleNav()
+
         }
     }
 }
@@ -36,6 +37,10 @@ export default {
         justify-content: center;
         align-items: center;
         /* box-shadow: 5px 8px #a59f80; */
+    }
+    .anim-vert{
+        /* background-color: hotpink; */
+        transform: rotate(90deg);
     }
     
     .bun{

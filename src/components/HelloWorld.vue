@@ -140,12 +140,6 @@ img{
   justify-content: flex-start;
   align-items: stretch;
 }
-/* .sideBar{
-  flex-grow: 2;
-}
-.library{
-  flex-grow: 2;
-} */
 
 
 </style>

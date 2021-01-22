@@ -1,5 +1,5 @@
 <template>
-    <div class="container anim" :class="{'anim-vert': isBurgerActive}" @click="toggle">
+    <div class="container" :class="{'anim-vert': isBurgerActive}" @click="toggle">
         <span class="bun"></span>
         <span class="bun"></span>
         <span class="bun"></span>        

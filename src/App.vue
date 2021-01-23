@@ -22,6 +22,6 @@ export default {
   /* color: #2c3e50; */
   color: #f8eeb4;
 
-  margin-top: 60px;
+  margin-top: 10px;
 }
 </style>

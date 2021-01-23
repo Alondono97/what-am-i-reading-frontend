@@ -1,6 +1,5 @@
 <template>
     <div class="body">
-        <div class="backdrop" @click="closeSideBar" v-if="isOpen"></div>
         <transition name="slide">
             <div v-if="isOpen" class="sidebar"> 
                 <div class="infoHeaders">    
@@ -13,7 +12,7 @@
                         <div> {{book.author}} </div>
                     </div>
                 </div>
-                <div v-if="!isShelf">
+                <div v-if="!isShelf" class="shelf">
                     <div>Hi</div>
                 </div>
 
@@ -74,27 +73,13 @@ export default {
     }
     .highlightHeader{
         opacity: 1;
-        text-decoration: underline;
-        /* background-color: #414142; */
-        
-
     }
     .infoHeaders{
         display: flex;
         justify-content: space-evenly;
     }
 
-    
-
-    .backdrop{
-        height: 100vh;
-        width: 100vw;
-        position: fixed;
-        
-        
-    }
     .sidebar{
-        /* background-color: #7a9ddd; */
         background-color: #dbd7c9;
         height: 70vh;
         width: 21rem;
@@ -113,10 +98,18 @@ export default {
         margin-bottom: 1em;
     }
     .bookTitle{
-        /* margin-left: 1em; */
         overflow-x: auto;
         text-overflow: ellipsis;
         white-space: nowrap;
         scrollbar-width: none;
     }
+
+    @media only screen and (min-width: 768px) {
+ 
+        .sidebar{
+            position: static;
+            margin-right: 20px;
+        }
+    }
+
 </style>

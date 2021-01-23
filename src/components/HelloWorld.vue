@@ -116,7 +116,7 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+<!--"scoped" attribute limits CSS to this component only -->
 <style scoped>
 h3 {
   margin: 40px 0 0;
@@ -139,6 +139,13 @@ img{
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
+}
+
+@media only screen and (min-width: 768px) {
+  .main{
+    justify-content: center;
+    align-content: space-between;
+  }
 }
 
 

@@ -1,10 +1,6 @@
 <template>
-    <div 
-        :style="`opacity: ${(score + 20) / 120}`"
-        @mouseover="hover = true"
-        @mouseleave="hover = false"
-    >
-        <span v-if="hover">{{score}}%</span>
+    <div :style="`opacity: ${score}`" @mouseover="hover = true" @mouseleave="hover = false" >
+        <span v-if="hover">{{ Math.round(score * 100)}}%</span>
     </div>
     
 </template>

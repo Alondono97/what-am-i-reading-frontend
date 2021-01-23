@@ -40,6 +40,7 @@ export default {
         /* justify-content: center;
         flex-direction: column; */
         /* width: 10rem; */
+        margin-top: 10px;
     }
     .week{
         display:flex;

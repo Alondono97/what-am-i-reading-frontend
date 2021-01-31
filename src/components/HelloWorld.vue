@@ -42,11 +42,17 @@ export default {
   },
   data: ()=>({
     weeks:[
-           {
+      {
+        values: [0/7, 0/7, 0/7, 0/7, 0/7, 0/7, 0/7],
+        title: "My Stroke of Insight",
+        pages: 196,
+        date: "1/31/2021"
+      },
+      {
         values: [1/7, 2/7, 3/7, 4/7, 5/7, 6/7, 7/7],
         title: "Stubborn Attachments",
         pages: 277,
-        date: "1/17/2021"
+        date: "1/24/2021"
       },
       {
         values: [1/7, 2/7, 3/7, 4/7, 5/7, 6/7, 7/7],

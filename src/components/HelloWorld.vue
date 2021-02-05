@@ -43,7 +43,7 @@ export default {
   data: ()=>({
     weeks:[
       {
-        values: [0/7, 0/7, 0/7, 0/7, 0/7, 0/7, 0/7],
+        values: [28/196, 46/196, 80/196, 105/196, 140/196, 0/196, 0/196],
         title: "My Stroke of Insight",
         pages: 196,
         date: "1/31/2021"

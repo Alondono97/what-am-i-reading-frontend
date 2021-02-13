@@ -43,6 +43,12 @@ export default {
   data: ()=>({
     weeks:[
       {
+        values: [6/165, 44/165, 54/165, 80/165, 116/165, 0/165, 0/165],
+        title: "Man's Search for Meaning",
+        pages: 165,
+        date: "2/07/2021"
+      },
+      {
         values: [28/196, 46/196, 80/196, 105/196, 140/196, 0/196, 0/196],
         title: "My Stroke of Insight",
         pages: 196,

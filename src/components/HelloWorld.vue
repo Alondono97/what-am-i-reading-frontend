@@ -43,7 +43,13 @@ export default {
   data: ()=>({
     weeks:[
       {
-        values: [6/165, 44/165, 54/165, 80/165, 116/165, 0/165, 0/165],
+        values: [30/209, 0/209, 0/209, 0/209, 0/209, 0/209, 0/209],
+        title: "The Screwtape Letters",
+        pages: 209,
+        date: "2/07/2021"
+      },
+      {
+        values: [6/165, 44/165, 54/165, 80/165, 116/165, 141/165, 165/165],
         title: "Man's Search for Meaning",
         pages: 165,
         date: "2/07/2021"

@@ -43,7 +43,13 @@ export default {
   data: ()=>({
     weeks:[
       {
-        values: [30/209, 61/209, 0/209, 0/209, 0/209, 0/209, 0/209],
+        values: [30/224, 64/224, 104/224, 0/224, 0/224, 0/224, 0/224],
+        title: "Do Androids Dream of Electric Sheep?",
+        pages: 209,
+        date: "2/07/2021"
+      },
+      {
+        values: [30/209, 61/209, 91/209, 121/209, 151/209, 181/209, 290/209],
         title: "The Screwtape Letters",
         pages: 209,
         date: "2/07/2021"

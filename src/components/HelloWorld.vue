@@ -45,14 +45,14 @@ export default {
       {
         values: [30/224, 64/224, 104/224, 0/224, 0/224, 0/224, 0/224],
         title: "Do Androids Dream of Electric Sheep?",
-        pages: 209,
-        date: "2/07/2021"
+        pages: 224,
+        date: "2/21/2021"
       },
       {
         values: [30/209, 61/209, 91/209, 121/209, 151/209, 181/209, 290/209],
         title: "The Screwtape Letters",
         pages: 209,
-        date: "2/07/2021"
+        date: "2/14/2021"
       },
       {
         values: [6/165, 44/165, 54/165, 80/165, 116/165, 141/165, 165/165],

@@ -42,14 +42,32 @@ export default {
   },
   data: ()=>({
     weeks:[
+      // {
+      //   values: [0/, 0/, 0/, 0/, 0/, 0/, 0/],
+      //   title: "",
+      //   pages: ,
+      //   date: ""
+      // },
       {
-        values: [30/224, 64/224, 104/224, 0/224, 0/224, 0/224, 0/224],
+        values: [0/357, 0/357, 0/357, 0/357, 0/357, 0/357, 0/357],
+        title: "The Selfish Gene",
+        pages: 357,
+        date: "3/07/2021"
+      },
+      {
+        values: [30/195, 55/195, 83/195, 111/195, 139/195, 167/195, 195/195],
+        title: "Zero to One",
+        pages: 195,
+        date: "2/28/2021"
+      },
+      {
+        values: [30/224, 64/224, 104/224, 128/224, 168/224, 192/224, 224/224],
         title: "Do Androids Dream of Electric Sheep?",
         pages: 224,
         date: "2/21/2021"
       },
       {
-        values: [30/209, 61/209, 91/209, 121/209, 151/209, 181/209, 290/209],
+        values: [30/209, 61/209, 91/209, 121/209, 151/209, 181/209, 209/209],
         title: "The Screwtape Letters",
         pages: 209,
         date: "2/14/2021"
@@ -206,10 +224,6 @@ export default {
         author: "Yann Martel"
       },
       {
-        title: "Don Quixote",
-        author: "Miguel de Cervantes"
-      },
-      {
         title: "The Sixth Extinction",
         author: "Elizabeth Kolbert"
       },
@@ -292,6 +306,10 @@ export default {
       {
         title: "Alexander Hamilton",
         author: "Ron Chernow"
+      },
+      {
+        title: "Don Quixote",
+        author: "Miguel de Cervantes"
       },
       {
         title: "The Brothers Karamazov",

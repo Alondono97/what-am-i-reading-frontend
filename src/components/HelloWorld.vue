@@ -49,7 +49,31 @@ export default {
       //   date: ""
       // },
       {
-        values: [0/357, 0/357, 0/357, 0/357, 0/357, 0/357, 0/357],
+        values: [0/225, 32/225, 0/225, 0/225, 0/225, 0/225, 0/225],
+        title: "Working In Public",
+        pages: 225,
+        date: "4/11/2021"
+      },
+      {
+        values: [36/256, 73/256, 109/256, 146/256, 182/256, 219/256, 256/256],
+        title: "Dune Messiah",
+        pages: 156,
+        date: "3/28/2021"
+      },
+      {
+        values: [32/240, 44/240, 46/240, 0/240, 0/240, 0/240, 0/240],
+        title: "The Year of Magical Thinking",
+        pages: 240,
+        date: "3/21/2021"
+      },
+      {
+        values: [22/224, 54/224, 88/224,128/224, 160/224, 192/224, 224/224],
+        title: "The Hitchhiker's Guide to the Galaxy",
+        pages: 224,
+        date: "3/14/2021"
+      },
+      {
+        values: [22/357, 56/357, 86/357, 121/357, 150/357, 0/357, 0/357],
         title: "The Selfish Gene",
         pages: 357,
         date: "3/07/2021"
